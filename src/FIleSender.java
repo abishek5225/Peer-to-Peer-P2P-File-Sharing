@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -12,6 +13,8 @@ public class FIleSender {
 
         Socket socket=serverSocket.accept();
         System.out.println("Connected to"+socket.getInetAddress().getHostAddress());
+
+        File file=new File(filepath);
 
     }
 }
