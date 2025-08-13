@@ -15,6 +15,7 @@ public class FIleSender {
         System.out.println("Connected to"+socket.getInetAddress().getHostAddress());
 
         File file=new File(filepath);
+        byte[] buffer=new byte[5000];
 
     }
 }
