@@ -2,6 +2,7 @@ import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -20,7 +21,12 @@ public class FIleSender {
         byte[] buffer=new byte[5000];
 
         BufferedInputStream bis=new BufferedInputStream(new FileInputStream(file));
-        
+        OutputStream os=socket.getOutputStream();
+
+        int bytesRead;
+        while ((bytesRead= bis.read(buffer)) != -1) {
+            os.write(buffer,0,bytesRead);
+        }
 
     }
 }
