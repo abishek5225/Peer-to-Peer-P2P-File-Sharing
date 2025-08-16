@@ -27,6 +27,12 @@ public class FIleSender {
         while ((bytesRead= bis.read(buffer)) != -1) {
             os.write(buffer,0,bytesRead);
         }
+        os.flush();
+        bis.close();
+        socket.close();
+        serverSocket.close();
+
+        System.out.println("sent successfully!");
 
     }
 }
