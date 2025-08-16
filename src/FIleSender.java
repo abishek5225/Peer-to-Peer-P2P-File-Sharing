@@ -7,10 +7,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class FIleSender {
-    public static void main(String[] args) throws IOException {
-        int port=5000;
-        String filepath= "test.txt";
-
+    public static void main(String filepath, int port) throws IOException {
         ServerSocket serverSocket = new ServerSocket(port);
         System.out.println("Waiting for connection on port "+port);
 
