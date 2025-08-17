@@ -10,6 +10,13 @@ public class Main {
         System.out.println("2.Receive a file");
         System.out.println("Choose an option: ");
         int choice= input.nextInt();
-        input.nextLine()
+        input.nextLine();
+
+        try{
+
+        }catch(Exception ex){
+            System.out.println("Exception occured"+ex);
+            
+        }
     }
 }
