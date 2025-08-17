@@ -1,3 +1,5 @@
+import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
@@ -9,6 +11,11 @@ public class FileReceiver {
 
         byte[] buffer=new byte[4096];
         InputStream inputStream=socket.getInputStream();
-        
+        BufferedOutputStream bos=new BufferedOutputStream(new FileOutputStream(saveAs));
+
+        int bytesRead;
+        while ((bytesRead = inputStream.read(buffer)) != -1) {
+            bos.write(buffer, 0 ,bytesRead);
+        }
     }
 }
