@@ -6,7 +6,8 @@ import java.net.Socket;
 
 public class FileReceiver {
     public static void main(String serverIP, int port , String saveAs) throws IOException {
-        Socket socket=new Socket(serverIP, port);
+        try{
+            Socket socket=new Socket(serverIP, port);
         System.out.println("connected..");
 
         byte[] buffer=new byte[4096];
@@ -22,5 +23,9 @@ public class FileReceiver {
         socket.close();
 
         System.out.println("File received successfully..");
+        }catch(IOException ex){
+            System.out.println("Exception occured"+ex.getMessage());
+            ex.printStackTrace();
+        }
     }
 }
