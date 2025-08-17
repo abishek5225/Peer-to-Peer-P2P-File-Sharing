@@ -20,6 +20,12 @@ public class Main {
                 int port= input.nextInt();
                 input.nextLine();
                 FIleSender.sendfile(filepath, port);
+            }else if(choice==2){
+                System.out.println("Enter Senders IP:");
+                String ip=input.nextLine();
+                System.out.println("Enter port");
+                int port=input.nextInt();
+                input.nextLine();
             }
 
         }catch(Exception ex){
