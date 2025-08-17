@@ -3,9 +3,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner=new Scanner(System.in);
+        Scanner input=new Scanner(System.in);
 
         System.out.println("P2P FILE Sharing tool");
         System.out.println("1. Send a file");
+        System.out.println("2.Receive a file");
+        System.out.println("Choose an option: ");
+        int choice= input.nextInt();
+        input.nextLine()
     }
 }
