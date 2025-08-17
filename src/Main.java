@@ -26,6 +26,8 @@ public class Main {
                 System.out.println("Enter port");
                 int port=input.nextInt();
                 input.nextLine();
+            }else{
+                System.out.println("Invalid option");
             }
 
         }catch(Exception ex){
