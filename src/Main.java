@@ -34,5 +34,6 @@ public class Main {
             System.out.println("Exception occured"+ex);
             
         }
+        input.close();
     }
 }
