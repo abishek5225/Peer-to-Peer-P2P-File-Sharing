@@ -17,5 +17,10 @@ public class FileReceiver {
         while ((bytesRead = inputStream.read(buffer)) != -1) {
             bos.write(buffer, 0 ,bytesRead);
         }
+        bos.flush();
+        bos.close();
+        socket.close();
+
+        System.out.println("File received successfully..");
     }
 }
