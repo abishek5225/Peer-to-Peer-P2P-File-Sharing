@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class FIleSender {
+public class FileSender {
     public static void sendfile(String filepath, int port) throws IOException {
         ServerSocket serverSocket = new ServerSocket(port);
         System.out.println("Waiting for connection on port "+port);

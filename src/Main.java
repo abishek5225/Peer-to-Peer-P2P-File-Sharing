@@ -19,7 +19,7 @@ public class Main {
                 System.out.println("Enter port to use(default 5000):");
                 int port= input.nextInt();
                 input.nextLine();
-                FIleSender.sendfile(filepath, port);
+                FileSender.sendfile(filepath, port);
             }else if(choice==2){
                 System.out.println("Enter Senders IP:");
                 String ip=input.nextLine();
