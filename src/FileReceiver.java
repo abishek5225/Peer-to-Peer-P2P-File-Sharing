@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.net.Socket;
 
 public class FileReceiver {
-    public static void main(String serverIP, int port , String saveAs) throws IOException {
+    public static void receiveFile(String serverIP, int port , String saveAs) throws IOException {
         try{
             Socket socket=new Socket(serverIP, port);
         System.out.println("connected..");

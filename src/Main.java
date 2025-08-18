@@ -16,6 +16,7 @@ public class Main {
             if(choice ==1){
                 System.out.println("Enter file path to send");
                 String filepath=input.nextLine();
+
                 System.out.println("Enter port to use(default 5000):");
                 int port= input.nextInt();
                 input.nextLine();
@@ -23,6 +24,7 @@ public class Main {
             }else if(choice==2){
                 System.out.println("Enter Senders IP:");
                 String ip=input.nextLine();
+
                 System.out.println("Enter port");
                 int port=input.nextInt();
                 input.nextLine();
