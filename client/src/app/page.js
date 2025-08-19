@@ -8,6 +8,9 @@ export default function Home() {
         <Link href="/send">
         <button className="bg-blue-500 text-white hover:bg-blue-600 px-6 py-3 rounded-xl shadow">Send File</button>
         </Link>
+      <Link href="/receive">
+        <button className="bg-green-500 text-white hover:bg-green-600 px-6 py-3 rounded-xl shadow">Receive File</button>
+        </Link>
       </div>
 
     </div>
