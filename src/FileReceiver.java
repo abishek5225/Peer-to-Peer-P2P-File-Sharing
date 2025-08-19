@@ -8,7 +8,7 @@ public class FileReceiver {
     public static void receiveFile(String serverIP, int port , String saveAs) throws IOException {
         try{
             Socket socket=new Socket(serverIP, port);
-        System.out.println("connected..");
+        System.out.println("connected.");
 
         byte[] buffer=new byte[4096];
         InputStream inputStream=socket.getInputStream();
