@@ -2,6 +2,13 @@
 import { useState } from "react"
 
 export default function ReceivePage(){
-    const [ip, setIp] = useState(""); 
-    const [port, setPort] = useState("");
+    const [downloading, setDownloading]= useState(false);
+
+    const handleReceive= async()=>{
+        setDownloading(true);
+        try{
+            const res= await fetch("http://localhost:8080/receive");
+            
+        }
+    }
 }
