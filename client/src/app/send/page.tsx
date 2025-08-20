@@ -19,7 +19,17 @@ export default function SendPage(){
   }
 
   return (
-    <div className="">
+    <div className="bg-gray-500 min-h-screen flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold mb-4">Send a File</h1>
+        <input type="file" 
+        onChange={(e) => {
+            setFile(e.target.files?.[0] || null)
+        }}
+        className="mb-4 underline"
+        />
+        <button 
+        onClick={handleSubmit}
+        >Send File</button>
 
     </div>
   );
