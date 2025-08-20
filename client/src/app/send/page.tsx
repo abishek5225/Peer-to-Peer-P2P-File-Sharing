@@ -1,4 +1,5 @@
 "use client"
+import React from "react";
 import { useState } from "react"
 
 export default function SendPage(){
@@ -9,7 +10,17 @@ export default function SendPage(){
 
     const formData= new FormData();
     formData.append("file", file);
-}
 
-}
+    await fetch("http://localhost:8080/api/send", {
+        method: "POST",
+        body: formData
+    });
+    alert("File sent Successfully!");
+  }
 
+  return (
+    <div className="">
+
+    </div>
+  );
+}
