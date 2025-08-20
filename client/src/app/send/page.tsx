@@ -25,9 +25,9 @@ export default function SendPage(){
         onChange={(e) => {
             setFile(e.target.files?.[0] || null)
         }}
-        className="mb-4 underline"
+        className="mb-4 underline text-blue-300"
         />
-        <button 
+        <button className="bg-blue-500 px-6 py-3 text-white rounded-xl shadow hover:bg-blue-600 "
         onClick={handleSubmit}
         >Send File</button>
 
